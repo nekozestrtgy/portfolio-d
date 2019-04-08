@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto Slab','Sawarabi Gothic', sans-serif;
+}
+
+a:hover {
+  background-color: #4169e1;
+  opacity: 0.7;
+}
+
+.content {
+  width: 980px;
+  margin: 24px auto 0;
+  display: flex;
+  .left-content {
+    width: 374px;
+  }
+  .right-content {
+    width: 606px;
+    padding-left: 24px;
+  }
+}
+
+.content__works {
+  width: 264px;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 64px;
+  text-align: center;
+  margin: 48px auto;
+  text-decoration: underline;
+  width: 100%;
+}
+
+h3 {
+  display: inline-block;
+  font-size: 32px;
+  width: 264px;
+  margin-top: 24px;
+  text-align: center;
+}
+
+header {
+  height: 64px;
+  position: fixed;
+  z-index: 2;
+  ul {
+    li {
+      display: block;
+      width: 10vw;
+      margin-top: 24px;
+      padding: 8px;
+      background-color: rgba(255, 255, 255, 0.7);
+      font-size: 14px;
+    }
+    li.title {
+      width: 16vw;
+      text-decoration: underline;
+      h1 {
+        font-size: 36px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+section {
+  height: 90vh;
+}
+section#first-block {
+  background: image-url('00000022.JPG');
+  position: relative;
+  i {
+    color: white;
+    font-size: 64px;
+    opacity: 0.7;
+    position: absolute;
+    bottom: 36px;
+    text-align: center;
+    width: 100%;
+  }
+}
+section#second-block {
+  .content {
+    .left-content {
+      width: 374px;
+      img {
+        height: 264px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      h3 {}
+    }
+    .right-content {
+      p {
+        font-size: 16px;
+        text-align: justify;
+      }
+    }
+  }
+}
+section#third-block {
+  background-color: #4169e1;
+  h2 {
+    color: white;
+  }
+  .content {
+    justify-content: space-between;
+    &__works {
+      a {
+        img {
+          max-width: 264px;
+        }
+      }
+      h3 {
+        display: inline-block;
+        margin-bottom: 24px;
+        color: white;
+      }
+      p {
+        color: white;
+      }
+    }
+  }
+}
+section#fourth-block {
+  .content {
+    h3 {
+      font-size: 48px;
+      display: inline-block;
+      text-align: center;
+      margin: 48px auto;
+      text-decoration: underline;
+      width: 100%;
+    }
+  }
+}
